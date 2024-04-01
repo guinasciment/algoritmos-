@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="guilherme.nascimento"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 01:57:11 "/>
+        <attribute name="created" value="Z3VpbGhlcm1lLm5hc2NpbWVudG87TlQzNjsyMDI0LTAzLTA0OyIxMToyNzowOSAiOzM1Mzg="/>
+        <attribute name="edited" value="Z3VpbGhlcm1lLm5hc2NpbWVudG87TlQzNjsyMDI0LTAzLTA0OyIwMTo1NzoxMSAiOzE7MzY0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="termo10, razao, n, a1" type="Integer" array="False" size=""/>
+            <input variable="a1"/>
+            <input variable="n"/>
+            <input variable="razao"/>
+            <assign variable="termo10" expression="a1+(n-1)*razao"/>
+            <output expression="termo10" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

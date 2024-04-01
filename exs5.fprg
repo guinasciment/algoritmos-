@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cauan.Magno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 09:09:47 "/>
+        <attribute name="created" value="Q2F1YW4uTWFnbm87TlQzODsyMDI0LTAzLTA0OyIwODo1OToxMyAiOzI0OTc="/>
+        <attribute name="edited" value="Q2F1YW4uTWFnbm87TlQzODsyMDI0LTAzLTA0OyIwOTowOTo0NyAiOzE7MjYwOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salariomin, kwh, kwhconsumido, kwhtotal, valorkwh" type="Integer" array="False" size=""/>
+            <input variable="kwhconsumido"/>
+            <assign variable="kwh" expression="2"/>
+            <assign variable="valorkwh" expression="2*kwhconsumido"/>
+            <output expression="&quot;1 kwh e igual a 2 reais&quot;" newline="True"/>
+            <output expression="&quot;seu valor a pagar e &quot; &amp; valorkwh" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

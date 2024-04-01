@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cauan.Magno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-07 08:17:31 "/>
+        <attribute name="created" value="Q2F1YW4uTWFnbm87REVTS1RPUC05RTJOT0VGOzIwMjQtMDItMDU7IjEwOjE1OjAwICI7MzI2NA=="/>
+        <attribute name="edited" value="Q2F1YW4uTWFnbm87REVTS1RPUC05RTJOT0VGOzIwMjQtMDItMDU7IjExOjI5OjU1ICI7MTszMzg4"/>
+        <attribute name="edited" value="Q2F1YW4uTWFnbm87TlQzODsyMDI0LTAyLTA3OyIwODoxNzozMSAiOzE7MjYwMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ano, mes, dia, resultado, quociente, resto, iv, ano1, anoc, cmes, diadasem" type="Integer" array="False" size=""/>
+            <declare name="lBissexto" type="Boolean" array="False" size=""/>
+            <input variable="ano"/>
+            <input variable="mes"/>
+            <input variable="dia"/>
+            <assign variable="lBissexto" expression="(ano % 4 ==0 &amp;&amp; ano%100 != 0) || ano % 400 == 0"/>
+            <output expression="lBissexto" newline="True"/>
+            <assign variable="ano1" expression="ano%100"/>
+            <assign variable="quociente" expression="ano1/4"/>
+            <assign variable="resto" expression="ano1%7"/>
+            <assign variable="resultado" expression="quociente+resto"/>
+            <assign variable="anoc" expression="resultado %7"/>
+            <output expression="anoc" newline="True"/>
+            <if expression="ano&gt;2000">
+                <then>
+                    <assign variable="anoc" expression="anoc-1"/>
+                    <if expression="anoc&lt;0">
+                        <then>
+                            <assign variable="anoc" expression="anoc+7"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <output expression="anoc" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="lBissexto &amp;&amp; (mes==1 || mes==2)">
+                <then>
+                    <assign variable="anoc" expression="anoc-1"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="anoc+mes+dia" newline="True"/>
+            <assign variable="diadasem" expression="(anoc+mes(mes)+dia) %7"/>
+            <output expression="&quot;Voc&#234; Nasceu no dia &quot; &amp; diadasem &amp; &quot; da semana&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="mes" type="Integer" variable="cmes">
+        <parameters>
+            <parameter name="mes" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="cmes" type="Integer" array="False" size=""/>
+            <if expression="mes==1 || mes==10">
+                <then>
+                    <assign variable="cmes" expression="1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="mes==2 ||mes== 3 || mes== 11">
+                <then>
+                    <assign variable="cmes" expression="4"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="mes==4 || mes==7">
+                <then>
+                    <assign variable="cmes" expression="0"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="mes== 6 || mes== 9 || mes=12">
+                <then>
+                    <assign variable="cmes" expression="6"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

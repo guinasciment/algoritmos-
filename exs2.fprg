@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cauan.Magno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 08:38:20 "/>
+        <attribute name="created" value="Q2F1YW4uTWFnbm87TlQzODsyMDI0LTAzLTA0OyIwODozNDoyNSAiOzI0OTM="/>
+        <attribute name="edited" value="Q2F1YW4uTWFnbm87TlQzODsyMDI0LTAzLTA0OyIwODozODoyMCAiOzE7MjYwMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sucessor, antecessor, numero" type="Integer" array="False" size=""/>
+            <input variable="numero"/>
+            <assign variable="antecessor" expression="numero-1"/>
+            <assign variable="sucessor" expression="numero+1"/>
+            <output expression="sucessor  &amp;  antecessor" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

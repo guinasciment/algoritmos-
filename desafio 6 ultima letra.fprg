@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="guilherme.nascimento"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 10:09:38 "/>
+        <attribute name="created" value="Z3VpbGhlcm1lLm5hc2NpbWVudG87TlQzNjsyMDI0LTAzLTA0OyIxMDowMjo0OSAiOzM1MzQ="/>
+        <attribute name="edited" value="Z3VpbGhlcm1lLm5hc2NpbWVudG87TlQzNjsyMDI0LTAzLTA0OyIxMDowOTozOCAiOzE7MzY0Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, ultimo" type="String" array="False" size=""/>
+            <input variable="nome"/>
+            <output expression="nome" newline="True"/>
+            <assign variable="ultimo" expression="char(nome,len(nome)-1)"/>
+            <output expression="ultimo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

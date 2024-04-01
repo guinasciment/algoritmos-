@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="guilherme.nascimento"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 03:00:23 "/>
+        <attribute name="created" value="Z3VpbGhlcm1lLm5hc2NpbWVudG87TlQzNjsyMDI0LTAzLTA0OyIwMjo1NTozMyAiOzM1MzY="/>
+        <attribute name="edited" value="Z3VpbGhlcm1lLm5hc2NpbWVudG87TlQzNjsyMDI0LTAzLTA0OyIwMzowMDoyMyAiOzE7MzYzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="hora, minutoatual, minutomeianoite" type="Real" array="False" size=""/>
+            <input variable="hora"/>
+            <input variable="minutoatual"/>
+            <assign variable="minutomeianoite" expression="(hora*60)+minutoatual"/>
+            <output expression="minutomeianoite" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

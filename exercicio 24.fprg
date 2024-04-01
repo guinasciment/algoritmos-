@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="guilherme.nascimento"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 08:58:10 "/>
+        <attribute name="created" value="Z3VpbGhlcm1lLm5hc2NpbWVudG87TlQzNjsyMDI0LTAzLTA2OyIwODoxODowNyAiOzM1NDQ="/>
+        <attribute name="edited" value="Z3VpbGhlcm1lLm5hc2NpbWVudG87TlQzNjsyMDI0LTAzLTA2OyIwODo1ODoxMCAiOzE7MzY1MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, a, b, c, d, e, f, numero1, numero2, verificacao, soma, g, h, i, numero3, j, k, l" type="Integer" array="False" size=""/>
+            <input variable="numero"/>
+            <assign variable="a" expression="numero/100"/>
+            <output expression="a" newline="True"/>
+            <assign variable="b" expression="numero%100/10"/>
+            <output expression="b" newline="True"/>
+            <assign variable="c" expression="numero%100%10"/>
+            <output expression="c" newline="True"/>
+            <assign variable="d" expression="c"/>
+            <output expression="d" newline="True"/>
+            <assign variable="e" expression="b"/>
+            <output expression="e" newline="True"/>
+            <assign variable="f" expression="a"/>
+            <output expression="f" newline="True"/>
+            <assign variable="d" expression="d*100"/>
+            <output expression="d" newline="True"/>
+            <assign variable="e" expression="e*10"/>
+            <assign variable="numero2" expression="d+e+f"/>
+            <output expression="numero2" newline="True"/>
+            <assign variable="numero3" expression="numero+numero2"/>
+            <assign variable="g" expression="numero3/100"/>
+            <output expression="g" newline="True"/>
+            <assign variable="h" expression="numero3%100/10"/>
+            <output expression="h" newline="True"/>
+            <assign variable="i" expression="numero3%100%10"/>
+            <output expression="i" newline="True"/>
+            <assign variable="j" expression="g*1"/>
+            <output expression="j" newline="True"/>
+            <assign variable="k" expression="h*2"/>
+            <output expression="k" newline="True"/>
+            <assign variable="l" expression="i*3"/>
+            <output expression="i" newline="True"/>
+            <assign variable="soma" expression="l+k+j"/>
+            <output expression="soma" newline="True"/>
+            <assign variable="verificacao" expression="soma%10"/>
+            <output expression="verificacao" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

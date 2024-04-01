@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="guilherme.nascimento"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 10:30:38 "/>
+        <attribute name="created" value="Z3VpbGhlcm1lLm5hc2NpbWVudG87TlQzNjsyMDI0LTAzLTA0OyIxMDowMjo0OSAiOzM1MzQ="/>
+        <attribute name="edited" value="Z3VpbGhlcm1lLm5hc2NpbWVudG87TlQzNjsyMDI0LTAzLTA0OyIxMDozMDozOCAiOzU7MzY0NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, doisultimos, u" type="String" array="False" size=""/>
+            <input variable="nome"/>
+            <output expression="nome" newline="True"/>
+            <assign variable="doisultimos" expression="Char(nome,len(nome)-2)"/>
+            <output expression="doisultimos" newline="True"/>
+            <assign variable="u" expression="char (nome,len(nome)-1)"/>
+            <output expression="u" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

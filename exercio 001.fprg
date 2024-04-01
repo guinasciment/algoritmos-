@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="guilherme.nascimento"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-24 10:48:32 "/>
+        <attribute name="created" value="Z3VpbGhlcm1lLm5hc2NpbWVudG87REVTS1RPUC1ITDJDTVZVOzIwMjQtMDEtMjQ7IjEwOjA1OjAwICI7NDM1Mw=="/>
+        <attribute name="edited" value="Z3VpbGhlcm1lLm5hc2NpbWVudG87REVTS1RPUC1ITDJDTVZVOzIwMjQtMDEtMjQ7IjEwOjQ4OjMyICI7MTs0NDcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, soma" type="Integer" array="False" size=""/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="soma" expression="a+b+c"/>
+            <output expression="soma" newline="True"/>
+            <input variable="media"/>
+            <assign variable="media" expression="soma/media"/>
+            <output expression="media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

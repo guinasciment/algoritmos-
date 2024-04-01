@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="guilherme.nascimento"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 10:07:25 "/>
+        <attribute name="created" value="Z3VpbGhlcm1lLm5hc2NpbWVudG87TlQzNjsyMDI0LTAzLTA2OyIwOTo1OToxNiAiOzM1NTA="/>
+        <attribute name="edited" value="Z3VpbGhlcm1lLm5hc2NpbWVudG87TlQzNjsyMDI0LTAzLTA2OyIxMDowNzoyNSAiOzE7MzY0Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, soma, numero" type="Integer" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <for variable="a" start="25" end="200" direction="inc" step="1">
+                <if expression="a%2==0">
+                    <then>
+                        <assign variable="soma" expression="soma+a"/>
+                    </then>
+                    <else>
+                        <output expression="a" newline="True"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

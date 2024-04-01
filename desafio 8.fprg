@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="guilherme.nascimento"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 11:16:56 "/>
+        <attribute name="created" value="Z3VpbGhlcm1lLm5hc2NpbWVudG87TlQzNjsyMDI0LTAzLTA0OyIxMToxMTowMSAiOzM1MjM="/>
+        <attribute name="edited" value="Z3VpbGhlcm1lLm5hc2NpbWVudG87TlQzNjsyMDI0LTAzLTA0OyIxMToxNjo1NiAiOzE7MzY0Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="raio, perimetro, area" type="Real" array="False" size=""/>
+            <input variable="raio"/>
+            <input variable="perimetro"/>
+            <input variable="area"/>
+            <assign variable="area" expression="3.14*raio^2"/>
+            <output expression="area" newline="True"/>
+            <assign variable="perimetro" expression="2*3.14*raio"/>
+            <output expression="perimetro" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
